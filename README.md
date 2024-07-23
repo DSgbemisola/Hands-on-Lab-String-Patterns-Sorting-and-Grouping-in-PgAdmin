@@ -133,19 +133,40 @@ The script file is available here: https://drive.google.com/file/d/1AVg-41q_HH0k
 
    In solving this problem, I issued the query below:
 
-   
+   SELECT SUM(quantity)
+   FROM petrescue
+   WHERE EXTRACT(MONTH FROM rescuedate) = 5;
 
-20. Displays the number of rescues on the 14th day of the month.
+   ![image](https://github.com/user-attachments/assets/b59e9569-6cba-47ed-94fd-23ca16c08c54)
+
+8. Displays the number of rescues on the 14th day of the month.
     
+   In solving this problem, I issued the query below:
+
+   SELECT SUM(quantity)
+   FROM petrescue
+   WHERE EXTRACT(DAY FROM rescuedate) = 14;
+
+   ![image](https://github.com/user-attachments/assets/08c4dd61-f9f5-4a6f-9fc4-e2789d6f3a2e)
+
+9. Animals rescued should see the vet within three days of arrivals. Enter a function that displays the third day from each rescue.
+
+   In solving this problem, I issued the query below:
+
+   SELECT *, RESCUEDATE + INTERVAL '3 days' AS vet_visiting_day
+   FROM PETRESCUE;
+
+   ![image](https://github.com/user-attachments/assets/d2088758-0108-44eb-9cae-bdb709b38a89)
+
+10. Display the length of time the animals have been rescued; the difference between today’s date and the rescue date.
+
     In solving this problem, I issued the query below:
 
-21. Animals rescued should see the vet within three days of arrivals. Enter a function that displays the third day from each rescue.
+    SELECT *, CURRENT DATE - RESCUEDATE AS length_of_rescue
+    FROM petrescue;
 
-    In solving this problem, I issued the query below:
+    ![image](https://github.com/user-attachments/assets/5ff9197e-894a-429c-a388-167fad239cf6)
 
-22. Displays the length of time the animals have been rescued; the difference between today’s date and the rescue date.
-
-    In solving this problem, I issued the query below:
 
 
    
