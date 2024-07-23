@@ -115,26 +115,35 @@ The script file is available here: https://drive.google.com/file/d/1AVg-41q_HH0k
    In solving this problem, I issued the query below:
 
    SELECT * FROM petrescue
-   WHERE ;
+   WHERE LOWER(animal) = 'cat';
+
+   ![image](https://github.com/user-attachments/assets/abf0c7aa-5e81-48fe-9cbd-50f1f5f97f3f)
+
+6. Display the day of the month when cats have been rescued.
+
+    In solving this problem, I issued the query below:
+
+    SELECT EXTRACT(DAY FROM rescuedate) AS day
+    FROM petrescue
+    WHERE animal = 'Cat';
+
+    ![image](https://github.com/user-attachments/assets/536ab1df-b50d-4c10-af63-1e01fabbdac4)
+
+7. Displays the number of rescues on the 5th month.
+
+   In solving this problem, I issued the query below:
+
+   
+
+20. Displays the number of rescues on the 14th day of the month.
     
+    In solving this problem, I issued the query below:
 
-17. Display the day of the month when cats have been rescued.
+21. Animals rescued should see the vet within three days of arrivals. Enter a function that displays the third day from each rescue.
 
     In solving this problem, I issued the query below:
 
-18. Displays the number of rescues on the 5th month.
-
-    In solving this problem, I issued the query below:
-
-19. Displays the number of rescues on the 14th day of the month.
-    
-    In solving this problem, I issued the query below:
-
-20. Animals rescued should see the vet within three days of arrivals. Enter a function that displays the third day from each rescue.
-
-    In solving this problem, I issued the query below:
-
-21. Displays the length of time the animals have been rescued; the difference between today’s date and the rescue date.
+22. Displays the length of time the animals have been rescued; the difference between today’s date and the rescue date.
 
     In solving this problem, I issued the query below:
 
