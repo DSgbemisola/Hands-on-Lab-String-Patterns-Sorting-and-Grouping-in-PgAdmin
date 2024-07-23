@@ -86,44 +86,55 @@ The script file is available here: https://drive.google.com/file/d/1AVg-41q_HH0k
 
    ![image](https://github.com/user-attachments/assets/020a15e6-da53-434a-a952-0a10ec5f10bd)
 
-10. Display the length of each animal name.
+2. Display the length of each animal name.
 
     In solving this problem, I issued the query below:
 
-    SELECT LENGHT(animal) FROM petrescue;
+    SELECT LENGTH(animal) FROM petrescue;
 
     ![image](https://github.com/user-attachments/assets/61061a63-c6f7-45ef-a662-102ccc1b64bc)
 
-12. Display the animal name in each rescue in uppercase.
+3. Display the animal name in each rescue in uppercase.
+
+   In solving this problem, I issued the query below:
+
+   SELECT UPPER(animal) FROM petrescue;
+
+   ![image](https://github.com/user-attachments/assets/5bed4df4-2e4c-49e5-beab-77f16a3acd25)
+
+4. Display the animal name in each rescue in uppercase without duplications.
+
+   In solving this problem, I issued the query below:
+
+   SELECT UPPER(DISTINCT animal) FROM petrescue;
+    
+   ![image](https://github.com/user-attachments/assets/abe4847c-e424-4a2f-a1ca-d375a88cfda1)
+
+5. Display all the columns from the PETRESCUE table, where the animal(s) rescued are cats. Use cat in lower case in the query.
+    
+   In solving this problem, I issued the query below:
+
+   SELECT * FROM petrescue
+   WHERE ;
+    
+
+17. Display the day of the month when cats have been rescued.
 
     In solving this problem, I issued the query below:
 
-13. Display the animal name in each rescue in uppercase without duplications.
+18. Displays the number of rescues on the 5th month.
 
     In solving this problem, I issued the query below:
 
-
-14. Displays all the columns from the PETRESCUE table, where the animal(s) rescued are cats. Use cat in lower case in the query.
+19. Displays the number of rescues on the 14th day of the month.
     
     In solving this problem, I issued the query below:
 
-15. Displays the day of the month when cats have been rescued.
+20. Animals rescued should see the vet within three days of arrivals. Enter a function that displays the third day from each rescue.
 
     In solving this problem, I issued the query below:
 
-16. Displays the number of rescues on the 5th month.
-
-    In solving this problem, I issued the query below:
-
-17. Displays the number of rescues on the 14th day of the month.
-    
-    In solving this problem, I issued the query below:
-
-18. Animals rescued should see the vet within three days of arrivals. Enter a function that displays the third day from each rescue.
-
-    In solving this problem, I issued the query below:
-
-19. Displays the length of time the animals have been rescued; the difference between today’s date and the rescue date.
+21. Displays the length of time the animals have been rescued; the difference between today’s date and the rescue date.
 
     In solving this problem, I issued the query below:
 
